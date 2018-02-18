@@ -87,6 +87,7 @@ public class WorkerRunnable implements Runnable{
         }
 
         DataOutputStream dOut = new DataOutputStream(Main.clientListenerSockets.get(end).getOutputStream());
+        dOut.writeLong(initial);
         dOut.writeInt(length);
         dOut.write(message.message);
         System.out.println("Message sent to Client" + end + " from Client" + initial);

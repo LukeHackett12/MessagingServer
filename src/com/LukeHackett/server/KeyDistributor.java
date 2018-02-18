@@ -1,6 +1,6 @@
 package com.LukeHackett.server;
 
-import java.io.DataInputStream;;
+import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.nio.ByteBuffer;
